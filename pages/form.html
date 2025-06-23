@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440">
+    <title>Написать нам</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="header_logobtn">
+        <img src="../icons/EuroLogo.svg" alt="Европейский" class="header_logo">
+        <div class="main-logo-text">
+            <span class="main-logo-title">ЕВРОПЕЙСКИЙ</span><br>
+            <span class="main-logo-subtitle">ТОРГОВО-РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР</span>
+        </div>
+        <nav>
+            <div class="nav_container">
+                <ul class="nav_ul">
+                    <li><a href="#">СХЕМА ТРЦ</a></li>
+                    <li><a href="#">ПАРКОВКА</a></li>
+                    <li><a href="#">КАК ДОБРАТЬСЯ</a></li>
+                    <li><a href="#">EN | RU</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="form-section">
+            <div class="form-section__container">
+                <h1 class="form-section__title">Обратная связь</h1>
+                <form class="feedback-form">
+                    <div class="feedback-form__group">
+                        <label for="name" class="feedback-form__label">Имя</label>
+                        <input type="text" id="name" name="name" class="feedback-form__input" required>
+                    </div>
+                    <div class="feedback-form__group">
+                        <label for="email" class="feedback-form__label">Email</label>
+                        <input type="email" id="email" name="email" class="feedback-form__input" required>
+                    </div>
+                    <div class="feedback-form__group">
+                        <label for="message" class="feedback-form__label">Сообщение</label>
+                        <textarea id="message" name="message" class="feedback-form__textarea" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="feedback-form__submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <section class="footer">
+        <div class="contact-us">
+            <a href="/src/index.html"><span class="footer__main-page">На главную</span></a>
+          </div>
+        <img src="../img/Footer.png" alt="" class="footer__img">
+    </section>
+</body>
+</html>
