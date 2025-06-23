@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="header_logobtn">
+        <a href="/src/index.html" class="euro__logo-home"><img src="/src/icons/EuroLogo.svg" alt="Европейский" class="header_logo"></a>
+        <div class="main-logo-text">
+            <span class="main-logo-title">ЕВРОПЕЙСКИЙ</span><br>
+            <span class="main-logo-subtitle">ТОРГОВО-РАЗВЛЕКАТЕЛЬНЫЙ ЦЕНТР</span>
+        </div>
+        <nav>
+            <div class="nav_container">
+                <ul class="nav_ul">
+                    <li><a href="#">СХЕМА ТРЦ</a></li>
+                    <li><a href="#">ПАРКОВКА</a></li>
+                    <li><a href="#">КАК ДОБРАТЬСЯ</a></li>
+                    <li><a href="#">EN | RU</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    </header>
+    <div class="locate__title">
+      ТРЦ "Европейский" находится рядом со зданием Киевского вокзала, ст. м. Киевская
+    </div>
+    <main class="main__block">
+      <section style="display: flex; justify-content: center; margin-top: 40px;">
+        <div style="width: 1100px; height: 450px; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 30px rgba(0,0,0,0.2); margin-left: 30px; margin-top: -15px;">
+          <script type="text/javascript" charset="utf-8"
+            src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY"></script>
+          <div id="map" style="width: 1160px; height: 400px;"></div>
+          <script>
+            ymaps.ready(function () {
+              var myMap = new ymaps.Map('map', {
+                center: [55.744637, 37.566072],
+                zoom: 16
+              });
+              var myPlacemark = new ymaps.Placemark([55.744637, 37.566072], {
+                balloonContent: 'ТРЦ Европейский'
+              });
+              myMap.geoObjects.add(myPlacemark);
+            });
+          </script>
+        </div>
+      </section>
+    </main>
+</body>
+</html>
